@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "alien-outlet-232109",
+  "private_key_id": "cfb7149dd7adfdb42fedb9faecf743426179c0a9",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC3olm26mytdiho\n4oUho3JBVt9Ub0yc3aNjPoROrKKT1WV9QcQtopzFVYtLgHBFz8Fe2ejL+FZcPhtA\nB4N5HUyTzKIf3uUe5CsHsHga7o9dWv+EoTdxec++Zuov/HtM9H7wZLkoCxpqhaUH\nxm3V1zfV0I9oC1YnC520NVNmbSvobU8A4G1AykOlu205t1NgyBskpsVgdbK3HBAu\nPCzolKJ7ehpGkVEyMg/U3Hj07cQypRjREQla6ox2QYQHyaZEMYuo+b/Bi8/ZkQOY\nwqWPnG9yVfqfRJN9oYgzuhr9EaGtbYy/DnqoYzUdcQVNbhPMoMpxA3UTHK4qOZMp\nBUKc+EnvAgMBAAECggEAA33EsuOWGV4ruoLEATW4UGG0cUiEbl8QYiyoG07Q8HqY\nKV98uVlkHaRYt6DDgbBHfuQptucLzUko/3ilGUJjWFQFqRF1zbaM0uKaBfkPJLk8\nLmtaQIAOYRJX1X25YmcrmqpvksFTST8tOg6du/kRiLEkaNf+VVO1Nd3lrgbZVNvm\n3UgUWMyMQgfjcIBl3eadMfqgGT4MnKW9jH4PrxTWoyXp5RIrb+0i9k/oZ4Y9PrIP\ncfLIt7w+yRumFsc2S8eXu5SMcS4oKVW9mtBFQw1Q9xXgiy98Fi4+dx3OBdP1I1Qk\ndfG9OT8Nzknq/5Xocxe0lC94YdL3P4cPpjdIkU++AQKBgQD0Aje3yD93uxXYBnM5\nIGPSNxaw+d0eCYaBaupRlu0c6lilZpjzhw1MLmY1Sn9zHh3b3k6VmjgYMEZmQrWe\nLZPW9N4OnlW+4BTTr52WslWQa7ViNrxi32QWqLmqs0V4MjkSRR/MQTdEqAeZnc0i\nR9A5Ad+Ms+c1Jj8dAy6nnyP9bwKBgQDAqJV44skJ2IlWqTtlzGo5MP1d+1EcjDpL\nUzhYAJjJXuLIf82GvYRTLD3SXrC6FRT5jnMCO8YSMpQkQbqkcXN7WGqVQENZz5eG\nf/nlgEqQ3ph0B4zcCdTwPHYjHJnU+ryI1ytBuBCaTTLqWY+tgyOj8p95+xRhFMMo\nOPWsieM7gQKBgFuogZmNpRmqszfkpF+vJRAQFXwBP+hKl7YBnWdslEEqXoYzFf1U\nm9AkFcyq4Vky1PCEf2x+89dSOv+qy2JRqJk0fj1riLYconYqH7492xpW+1mbSgSx\n+XzxgFz43n2aEAom4Rzu2n31yHUR676Wz0a6x2ipI465gTe6vEnG49QNAoGANkvM\nxGL10aaLHjdXnBr+HNwnq+L2OxtyGmR7zqFsbeQl+ee63qxurJodWjqBiBAE90gk\nNY7vBZXnlkhH96xZpXuHnkScNqWAyNEsdnevjCCPyrOOCT1kG8iOatrWp+V6WP57\nHGxpkXMMVGulSHtbAguQ0mnmlm2pip5y7ot11QECgYEA5StvJRLyIH5uBVR6QDtk\n4kRDvYUoSyTRws1czsKkeM89gRgtTJ9uB2xNbWdTKomf87o/2gLhJaMJyJ2TPU59\nz3R9GGYwYG8ta3lLRNu10NhBnLpIpzJTfNYrr/KL3KxNABu5vYgos4DQuyYiXSNz\nCS1QROIuZJMASQUt2Egtzso=\n-----END PRIVATE KEY-----\n",
+  "client_email": "vision-api@alien-outlet-232109.iam.gserviceaccount.com",
+  "client_id": "113685670152764162565",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/vision-api%40alien-outlet-232109.iam.gserviceaccount.com"
+}

@@ -22,7 +22,7 @@ def permute(array):
 # Reading input file into dataframe
 
 
-def make_key_value(input_file):
+def make_key_value(input_file,filename):
     df_input=pd.read_excel(input_file)
     # Now, deleting all the columns and rows with  only nan values in the input values 
     columns=df_input.columns
@@ -62,7 +62,7 @@ def make_key_value(input_file):
     for i in redundant_keys_in_dict:
         key_value_dictionary.pop(i,None)
     final_df=pd.DataFrame.from_dict(key_value_dictionary).T
-    filename_to_save='result_'+input_file.split('/')[-1]
+    filename_to_save='result_'+filename
     final_df.to_excel(filename_to_save)
 
 # make_key_value('/home/shivam/Desktop/FlaskMCube/Test 1 - (Excel).xlsx')
