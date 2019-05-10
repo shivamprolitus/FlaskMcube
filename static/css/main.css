@@ -1,0 +1,12 @@
+#heading {
+    background-color: #00FFFF;
+    height: 250px;
+    width: 50%;
+    opacity: .9;
+    margin:auto;
+    text-align: center;
+  }
+
+  #file{
+    text-align: center;
+  } 

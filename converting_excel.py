@@ -62,6 +62,7 @@ def make_key_value(input_file,filename):
     for i in redundant_keys_in_dict:
         key_value_dictionary.pop(i,None)
     final_df=pd.DataFrame.from_dict(key_value_dictionary).T
+    final_df.columns=['2017','2018']
     filename_to_save='result_'+filename
     final_df.to_excel(filename_to_save)
 

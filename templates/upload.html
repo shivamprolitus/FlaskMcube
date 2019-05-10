@@ -1,1 +1,30 @@
-"gdjfjdf"
+
+ <!doctype html><head>
+    <title>Upload new File</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<div id= 'heading' class='align-middle'>
+    <h1 style='padding-top:70px' >Upload File for extraction</h1>
+    <form method=post enctype=multipart/form-data style="padding-top: 50px">
+        <div class="d-flex align-items-stretch ">
+        <input type=file name=file  id='file' class="btn-info " style="display: inline;height: 100%;">
+        <input type=submit value=Upload id='btn' class="btn-info" style="display: inline;height: 100%; ;">
+        </div>
+    </form> 
+</div>
+
+<!-- 
+<div id= 'heading' class='align-middle'>
+    <h1 style='padding-top:70px' >Upload new File</h1>
+    <form method=post enctype=multipart/form-data style="padding-top: 50px">
+        <input type=file name=file id='file' class="btn btn-info" style="display: inline">
+        <input type=submit value=Upload id='btn' class="btn btn-info" style="display: inline;">
+      </form> 
+</div> -->
+
+
+     

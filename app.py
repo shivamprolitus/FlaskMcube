@@ -59,20 +59,30 @@ def upload_file():
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
             return redirect(url_for('uploaded_file',
                                     filename=filename))
-    return '''
-    <!doctype html>
-    <title>Upload new File</title>
-    <h1>Upload new File</h1>
-    <form method=post enctype=multipart/form-data>
-      <input type=file name=file>
-      <input type=submit value=Upload>
-    </form>
-    '''
+    return render_template('upload.html')
     
 #  @app.route('/uploads/<path:filename>', methods=['GET', 'POST'])
 #     def download(filename):
 #     uploads = os.path.join(current_app.root_path, app.config['UPLOAD_FOLDER'])
 #     return send_from_directory(directory=uploads, filename=filename)
+
+from io import BytesIO
+@app.route('/showfile')
+def show_file():
+    uploads=os.path.join(app.root_path,app.config['UPLOAD_FOLDER'])
+    buffer = BytesIO()
+    # buffer.write(b'jJust some letters.')
+    # Or you can encode it to bytes.
+    # buffer.write('Just some letters.'.encode('utf-8'))
+    # buffer.seek(0)
+    # return send_file(buffer, as_attachment=True,
+    #                  attachment_filename='Test_2.pdf.xlsx',
+    #                  mimetype='text/xlsx')
+    return send_file(uploads+'/'+'Test_1.xlsx',
+                     mimetype='text/xlsx',
+                     attachment_filename='Test_1.xlsx',
+                     as_attachment=True)
+    # return send_from_directory(directory=uploads,filename='Test_2.pdf.xlsx')
 
 @app.route('/uploads/<filename>')
 def uploaded_file(filename):
@@ -92,11 +102,16 @@ def uploaded_file(filename):
         return send_from_directory(app.root_path+"/",filepath)
 
     elif extension=='pdf':
-        c = pdftables_api.Client('tdjdrag6bh6p')
+        c = pdftables_api.Client('3zn6uoljmgcp')
         c.xlsx('uploads/'+filename,'uploads/'+filename)
         filename2=filename+'.xlsx'
         uploads = os.path.join(app.root_path, app.config['UPLOAD_FOLDER'])
-        return send_from_directory(directory=uploads, filename=filename2)
+        return send_file(uploads+'/'+filename2,
+                     mimetype='text/xlsx',
+                     attachment_filename=filename2,
+                     as_attachment=True)
+        # return redirect(url_for('show_file',namefile=filename2))
+        # return send_from_directory(directory=uploads, namefile=filename2)
     else:
         from google.cloud import vision
         client = vision.ImageAnnotatorClient()
@@ -136,7 +151,11 @@ def uploaded_file(filename):
         writer.save()
             
         # return send_from_directory(app.root_path+"/",filename_to_save)
-        return send_from_directory(directory=app.root_path, filename=filename_to_save)
+        return send_file(filename_to_save,
+                     mimetype='text/xlsx',
+                     attachment_filename=filename_to_save,
+                     as_attachment=True)
+        # return send_from_directory(directory=app.root_path, filename=filename_to_save)
 
 
 
